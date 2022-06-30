@@ -64,7 +64,7 @@ plotMotifwithCL <- function(motif.info, ...){
     geom_motif() + theme_bw() + ylim(0, 2) + xlim(0, 1)+theme_void()
 	gbar <- ggplot(data.frame(freq=-as.numeric(unlist(strsplit(motif.info$crosslink_counts, split = ";")))/motif.info$num_sites, loc=1:ncol(pfm.mat[[1]]$mat)),aes(x=loc, y=freq))+geom_bar(stat="identity", ...)+theme_void()
   #grid.arrange(gmotif, gbar, nrow=2)
- p <-  plot_grid(gmotif, gbar, align = "v", nrow = 2, rel_heights = c(2/3, 1/3))
+ p <-  plot_grid(gmotif, gbar, align = "hv", nrow = 2, rel_heights = c(2/3, 1/3))
  return(p)
 }
 
@@ -128,7 +128,7 @@ motif.info <- motifsummary(motiffile, trim = trim, seqformat = seqformat)
 
 barplot.col <- rgb(79,129,189, maxColorValue=255)
 #barplot.border <- F
-barplot.space <- 0.5
+barplot.space <- 0.9
 
 
 if(plotformat == "pdf"){
