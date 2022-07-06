@@ -122,7 +122,8 @@ foreach my $p (@pos)
 {
 	my $base = $p < 0 || $p >= $motifLen ? 'N' : substr($word, $p, 1);
 
-	print $fout join ("\t", sprintf("%02d", $p), $base, $crosslinkCount{$p}, $crosslinkCount{$p} / $n), "\n";
+	my $freq = $n == 0 ? 0 : $crosslinkCount{$p} / $n;
+	print $fout join ("\t", sprintf("%02d", $p), $base, $crosslinkCount{$p}, $freq), "\n";
 }
 close ($fout);
 
