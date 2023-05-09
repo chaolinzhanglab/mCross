@@ -1,8 +1,10 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
+
 #
 use Getopt::Long;
 use strict;
 use warnings;
+
 use File::Basename;
 use Carp;
 use Data::Dumper;
