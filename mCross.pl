@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 
 
 =head1 NAME
@@ -15,6 +15,8 @@ Created on May 22, 2016
 
 
 use strict;
+use warnings;
+
 use Getopt::Long;
 use Carp;
 use File::Basename;
