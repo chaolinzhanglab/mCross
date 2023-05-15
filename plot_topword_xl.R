@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 library (gplots);
 
 #plot the frequency of top words around crosslink sites

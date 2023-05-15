@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 library (limma);
 
 #get the list of top word showing asymmetric enrichment
