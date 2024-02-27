@@ -44,7 +44,7 @@ my $pseudoCount = 1e-6;
 
 my $clusterSeedMotifs = 0;
 my $crosslinkModel = 1; #1=simple, 2=nucleotide-specific
-my $scoreMethod = "log"; # or 'sqrt'
+my $scoreMethod = "sqrt"; # 'log' or 'sqrt'
 
 my $prefix = "RBP";
 
