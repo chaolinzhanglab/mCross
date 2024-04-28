@@ -81,7 +81,7 @@ if (@ARGV != 2)
 	print " -N       [int]   : max number of seed words to search ($maxN)\n";
 	print " --cluster-seeds  : cluster seed word\n";
 	print " --xl-model     [int]   : crosslink model (1=simple(default), 2=nucleotide-specific)\n";
-	print " --score-method [string]: [log]|sqrt\n";
+	print " --score-method [string]: log|[sqrt]\n";
 	print " --prefix       [string]: prefix of the motif name ($prefix)\n";
 	print " --single-output-file   : write all motifs to a single file\n";
 	print " -c             [string]: cache dir ($cache)\n";
