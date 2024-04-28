@@ -38,7 +38,7 @@ my $mismatch = 1;
 my $topWordFile = "";
 my $bgFastaFile = "";
 
-my $maxN = 20;
+my $maxN = 10;
 my $maxIter = 100;
 my $pseudoCount = 1e-6;
 
