@@ -33,7 +33,7 @@ use Motif;
 my $prog = basename ($0);
 my $progDir = dirname ($0);
 my $ext = 10;
-my $padding = 0;
+my $padding = 2;
 my $mismatch = 1;
 my $topWordFile = "";
 my $bgFastaFile = "";
